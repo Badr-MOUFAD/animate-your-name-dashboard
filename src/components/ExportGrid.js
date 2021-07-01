@@ -39,7 +39,7 @@ export default function PenComponent(props) {
             document.execCommand("copy");
           }}
         >
-          Copy text
+          Copy grid
         </button>
       </div>
     </div>
