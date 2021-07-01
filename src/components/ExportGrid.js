@@ -14,7 +14,7 @@ export default function PenComponent(props) {
       <div className="col">
         <input
           type="text"
-          id={`export-input`}
+          id={"export-input"}
           className="form-control"
           value={exportGrid}
         />
@@ -28,6 +28,19 @@ export default function PenComponent(props) {
         >
           Export
         </label>
+      </div>
+
+      <div className="col- mt-2">
+        <button
+          className="btn btn-sm btn-light"
+          onClick={() => {
+            let copyText = document.getElementById("export-input");
+            copyText.select();
+            document.execCommand("copy");
+          }}
+        >
+          Copy text
+        </button>
       </div>
     </div>
   );
