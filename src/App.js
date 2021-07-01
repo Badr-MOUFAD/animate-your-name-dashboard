@@ -3,7 +3,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import GridDimensionComponents from "./components/GridDimension";
+import GridDimensionComponent from "./components/GridDimension";
 import GridComponent from "./components/Grid";
 import PenComponent from "./components/Pen";
 import ExportGridComponent from "./components/ExportGrid";
@@ -14,7 +14,7 @@ export default function App() {
       <div className="row">
         {/* side bar */}
         <div className="col-12 col-sm-4 col-md-3 col-lg-2 mx-3 border rounded p-3">
-          <GridDimensionComponents />
+          <GridDimensionComponent />
           <PenComponent />
           <ExportGridComponent />
         </div>

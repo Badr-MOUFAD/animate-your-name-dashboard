@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { gridSlectors } from "../redux/GridSlicer";
 
+import { gridToString } from "../jsScripts/gridFunctions";
+
 export default function PenComponent(props) {
   const [exportGrid, setExportedGrid] = useState("");
   const grid = useSelector(gridSlectors.grid);
@@ -44,26 +46,4 @@ export default function PenComponent(props) {
       </div>
     </div>
   );
-}
-
-export function gridToString(arr) {
-  const [n, m] = [arr.length, arr[0].length];
-
-  let stringArr = "[\n";
-
-  for (let i = 0; i < n; i++) {
-    let rowString = "[";
-
-    for (let j = 0; j < m - 1; j++) {
-      rowString += `${String(arr[i][j])}, `;
-    }
-
-    rowString += `${arr[i][m - 1]}]\n`;
-
-    stringArr += rowString + ",";
-  }
-
-  stringArr += "]";
-
-  return stringArr;
 }

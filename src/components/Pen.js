@@ -58,27 +58,3 @@ export function RadioItem(props) {
     </div>
   );
 }
-
-export function RadioComponent(props) {
-  const { radioName, id, checked, label, icon } = props;
-
-  return (
-    <div className="col-3 col-sm-5 ">
-      <input
-        type="radio"
-        className="btn-check"
-        name="options-outlined"
-        id="success-outlined"
-        autocomplete="off"
-        checked
-      />
-      <label
-        class="btn btn-outline-success"
-        style={{ width: "70px" }}
-        for="success-outlined"
-      >
-        Pen
-      </label>
-    </div>
-  );
-}

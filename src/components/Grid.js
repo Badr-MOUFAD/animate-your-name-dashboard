@@ -64,7 +64,7 @@ export function Square(props) {
     margin: "1px"
   };
 
-  const bgColor = value === 1 ? "primary" : "";
+  const bgColor = value === 1 ? "primary" : "light";
 
   return (
     <div

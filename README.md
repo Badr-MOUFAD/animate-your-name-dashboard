@@ -18,4 +18,4 @@ To create a figure all you need to do is:
 
 2. Draw your figure using your mouse curser. If you make a mistake do not worry, you can switch to eraser mode.
 
-3. After finishing, export your Grid, et Voilà.
+3. After finishing, export your Grid, et Voilà!
